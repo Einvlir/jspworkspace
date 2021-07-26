@@ -1,0 +1,35 @@
+package com.koreait.shoppingmall.controller.rest.study;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.koreait.shoppingmall.domain.Member;
+
+@Controller
+public class StudyController {
+	@GetMapping("/member")
+	@ResponseBody //이 어노테이션을 명시하면, ViewResolver에 의한 jsp 매핑이 일어나지 않는다.
+	public List<Member> getList() {
+		
+		Member m1 = new Member();
+		m1.setMember_id(1);
+		m1.setUser_id("scott");
+		m1.setPass("0000");
+		m1.setName("스콧");
+		
+		Member m2 = new Member();
+		m2.setMember_id(2);
+		m2.setUser_id("adams");
+		m2.setPass("2222");
+		m2.setName("애덤스");
+		
+		List list = new ArrayList<Member>();
+		list.add(m1);
+		list.add(m2);
+		return list;
+	}
+}

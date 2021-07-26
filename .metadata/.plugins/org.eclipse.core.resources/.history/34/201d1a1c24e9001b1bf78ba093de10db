@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.model;
+
+public interface AdminDAO {
+	public void select(int host_id);
+}

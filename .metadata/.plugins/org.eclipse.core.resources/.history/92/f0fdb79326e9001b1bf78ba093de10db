@@ -1,0 +1,39 @@
+package com.koreait.shoppingmall.model.service.admin;
+
+import java.util.List;
+
+import com.koreait.shoppingmall.domain.Admin;
+
+public class AdminServiceImpl implements AdminService{
+
+	@Override
+	public Admin login(Admin admin) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void regist(Admin admin) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Admin admin) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Admin admin) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List selectAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

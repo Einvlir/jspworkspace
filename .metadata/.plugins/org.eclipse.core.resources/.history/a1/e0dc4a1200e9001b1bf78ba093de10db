@@ -1,0 +1,14 @@
+package com.koreait.shoppingmall.android.chat;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.net.Socket;
+
+public class ServerMessageThread {
+	Socket socket;
+	BufferedReader buffr;
+	BufferedWriter buffw;
+	public ServerMessageThread(Socket socket) {
+		this.socket=socket;
+	}
+}

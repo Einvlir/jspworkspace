@@ -1,0 +1,16 @@
+package ga.dgmarket.gymshopping.controller.product;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import ga.dgmarket.gymshopping.model.service.product.ProductService;
+
+@Controller
+public class ProductController {
+	@Autowired
+	private ProductService productService;
+	@GetMapping("/main/product-list")
+	public String memberList() {
+		return "admin/main/product-list";
+	}
+}

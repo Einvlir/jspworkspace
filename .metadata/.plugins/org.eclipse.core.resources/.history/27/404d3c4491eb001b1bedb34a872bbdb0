@@ -1,0 +1,13 @@
+package com.koreait.shoppingmall.exception;
+
+public class FileDeleteException extends RuntimeException{
+	public FileDeleteException(String msg) {
+		super(msg);
+	}
+	public FileDeleteException(Throwable e) {
+		super(e);
+	}
+	public FileDeleteException(Throwable e, String msg) {
+		super(msg, e);
+	}
+}

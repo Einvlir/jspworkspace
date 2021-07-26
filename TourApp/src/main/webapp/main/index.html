@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+var posArray = new Array(5);
+var map;
+
+function initMap() {
+	//posArray[0] = new google.maps.LatLng(37.5760795095257, 126.97682385243226);
+	var mapProp= {
+	//좌표 배열에 데이터 넣기~
+	  center:new google.maps.LatLng(37.5760795095257, 126.97682385243226),
+	  zoom:15,
+	};
+	//맵 객체 생성
+
+	//createMarker(map);
+	map = new google.maps.Map(document.getElementById("content"),mapProp);
+}
+function createMarker(json){
+	//서버로부터 받은 json을 이용하여 마커 생성
+	console.log(json);
+	
+	for(var i = 0; i < json.item.length ; i ++){
+	var obj = json.item[i];
+		//마커 생성
+		var marker = new google.maps.Marker({position : new google.maps.LatLng(obj.mapy, obj.mapx)});
+		marker.setMap(map);
+		//팝업 윈도우 생성
+		var infowindow = new google.maps.InfoWindow({
+			content:"<img src = '"+obj.firstimage+"' width='30px'>"
+		});
+		infowindow.open(map, marker);
+	}
+	
+}
+
+function loadFromXML(){
+	$.ajax({
+		"url":"/place/list",
+		"type":"get",
+		"success":function(result,status,xhr){
+			var json = JSON.parse(result);
+			//console.log(json);
+			createMarker(json);
+		}
+	});
+}
+function getLastOne(){
+	$.ajax({
+		"url":"/main/lastone.jsp",
+		"type":"get",
+		"success":function(result,status,xhr){
+			console.log(result);
+			//createMarker(result);
+		}
+	});
+}
+//오라클에 등록되어있는 관광 및 맛집 정보 리스트 가져오기
+function getList(){
+	$.ajax({
+		"url":"/main/list.jsp",
+		"type":"get",
+		"success":function(result,status,xhr){
+			//alert(result);
+			
+			createMarker(JSON.parse(result));
+		}
+	});
+}
+
+function regist(){
+	//스트링 데이터 뿐만 아니라, 바이너리 파일도 포함된 데이터를 비동기로 등록 요청해보자.
+	//var formData = $("form").serialize();//일반 String을 전송하는 방법..
+ 	var formData = new FormData(document.querySelector("form")); // 바이너리 데이터 전송이 가능한 객체!
+	$.ajax({
+		"url":"/main/regist.jsp",
+		"type":"post",
+		"enctype":"multipart/form-data",
+		"data":formData,
+		"contentType":false,
+		"processData":false,
+		"success":function(result,status,xhr){
+			alert(result);
+			getLastOne();
+		}
+	});
+}
+
+$(function(){
+	getList();
+	var bt_regist=$("input[type='button']")[1];
+	$(bt_regist).click(function(){
+		regist();
+	});
+});
+</script>
+<style>
+.wrapper{
+	width: 1000px;
+	height: 700px;
+	background: yellow;
+	margin:auto;
+	overflow: hidden;
+}
+.leftSide{
+	width: 200px;
+	height: 700px;
+	background: crimson;
+	float: left;
+}
+#content{
+	width: 800px;
+	height: 100%;
+	background: #ccc;
+	float: left;
+}
+
+.leftSide * {
+	width:90%;
+}
+</style>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="leftSide">
+			<form enctype = "multipart/form-data">
+				<input type="button" value="공공데이터Load" onclick="loadFromXML()">
+				<!--  
+				<select>
+					<option>시·도 선택</option>
+				</select>
+				<select>
+					<option>구·군 선택</option>				
+				</select>						
+				-->
+				
+				<input type="text" name="title" placeholder="제목..">
+				<textarea placeholder="내용.." name = "content" style="height:200px"></textarea>
+				<input type="text" name = "addr1" placeholder="주소..">
+				<input type="text" name = "mapy" placeholder="위도..">
+				<input type="text" name = "mapx" placeholder="경도..">
+				<input type="file" name = "storeImg">
+				<input type="button" value="관광지 등록">
+			</form>
+		</div>
+		<div id="content">우</div>
+	</div>
+</body>
+</html>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWxZ9_I5cz__zmlCJBRJ6V-rNQ4Zu6xmY&callback=initMap"></script>

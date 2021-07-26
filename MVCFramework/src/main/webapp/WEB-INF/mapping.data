@@ -1,0 +1,6 @@
+terran=weak
+protoss=strong
+
+
+/blood.do=com.koreait.mvcframework.controller.blood.BloodController
+/movie.do=com.koreait.mvcframework.controller.movie.MovieController

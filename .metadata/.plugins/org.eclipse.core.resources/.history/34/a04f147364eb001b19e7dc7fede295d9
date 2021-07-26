@@ -1,0 +1,5 @@
+package ga.dgmarket.gymshopping.model.service.admin;
+
+public class AdminService {
+
+}

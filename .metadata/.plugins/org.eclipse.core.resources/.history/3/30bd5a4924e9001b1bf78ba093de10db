@@ -1,0 +1,11 @@
+package com.koreait.shoppingmall.model.repository.admin;
+
+import com.koreait.shoppingmall.domain.Admin;
+
+public class MybatisAdminDAO implements AdminDAO{
+
+	public Admin select(int host_id) {
+		return null;
+	}
+
+}

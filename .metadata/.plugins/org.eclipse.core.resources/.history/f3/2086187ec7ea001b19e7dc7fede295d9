@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.model.common.file;
+
+public class FileManager {
+
+}

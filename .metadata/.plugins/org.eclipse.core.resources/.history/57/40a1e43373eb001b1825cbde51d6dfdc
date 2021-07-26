@@ -1,0 +1,51 @@
+package ga.dgmarket.gymshopping.model.repository.member;
+
+import java.util.List;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import ga.dgmarket.gymshopping.domain.Member;
+import ga.dgmarket.gymshopping.exception.MemberExistException;
+
+@Repository
+public class MybatisAdminDAO implements MemberDAO{
+	
+	@Autowired
+	private SqlSessionTemplate sqlSessonTemplate;
+
+	@Override
+	public Member login(Member member) throws MemberExistException{
+		Member obj=sqlSessonTemplate.selectOne("Member.login",member);
+		if(obj==null) {
+			throw new MemberExistException("관리자 정보가 올바르지 않음");
+		}
+		return obj;
+	}
+
+	@Override
+	public void regist(Member member) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Member member) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Member member) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List selectAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

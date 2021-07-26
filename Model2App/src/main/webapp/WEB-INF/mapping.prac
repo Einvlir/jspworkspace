@@ -1,0 +1,3 @@
+#요청 url = 컨트롤러명
+/blood.do=com.koreait.model2app.controller.blood.BloodController
+

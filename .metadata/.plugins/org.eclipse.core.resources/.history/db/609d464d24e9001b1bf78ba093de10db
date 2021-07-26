@@ -1,0 +1,13 @@
+package com.koreait.shoppingmall.model.repository.admin;
+
+import org.mybatis.spring.SqlSessionTemplate;
+
+import com.koreait.shoppingmall.domain.Admin;
+
+public class MybatisAdminDAO implements AdminDAO{
+	private SqlSessionTemplate sqlSessionTemplate;
+	public Admin select(int host_id) {
+		return null;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.koreait.shoppingmall.model.service.admin;
+
+import com.koreait.shoppingmall.domain.Admin;
+
+public class AdminService {
+	public Admin select(int host_id);
+}

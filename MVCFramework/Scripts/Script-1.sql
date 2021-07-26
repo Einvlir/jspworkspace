@@ -1,0 +1,1 @@
+select count(member_id) from member WHERE regdate>=date_add(now(), INTERVAL -1 MONTH )

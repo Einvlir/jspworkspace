@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="/resource/admin/dist"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="./dist"/>
+			<item value="./plugins"/>
+			<item value="select dis"/>
+			<item value="select"/>
+			<item value="src=&quot;../dist"/>
+			<item value="src=&quot;../plugins"/>
+			<item value="../plugins"/>
+			<item value="card"/>
+			<item value="cont"/>
+			<item value="fruid"/>
+			<item value="/resources/admin/dist"/>
+			<item value="/resources/admin/plugins"/>
+			<item value="mail"/>
+			<item value="src=&quot;plugins"/>
+			<item value="src=&quot;dist"/>
+		</list>
+		<list key="replacehistory">
+			<item value="/resource/admin/dist"/>
+			<item value="/resource/admin/plugins"/>
+			<item value="src=&quot;/resources/admin/dist"/>
+			<item value="src=&quot;/resources/admin/plugins"/>
+			<item value="./dist"/>
+			<item value="./plugins/"/>
+			<item value="href=&quot;/resources/admin/dist"/>
+			<item value="href=&quot;/resources/admin/plugins"/>
+			<item value="href=&quot;/resourcesplugins"/>
+			<item value="href=&quot;plugins"/>
+			<item value="/reboard"/>
+			<item value="reboard"/>
+			<item value="poolManager"/>
+			<item value="button"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="-247"/>
+		<item key="DIALOG_Y_ORIGIN" value="90"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="392"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.jst.jsp.ui.internal.preferences.ui.JSPTemplatePreferencePage$JSPEditTemplateDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="39"/>
+		<item key="DIALOG_Y_ORIGIN" value="-11"/>
+		<item key="DIALOG_WIDTH" value="746"/>
+		<item key="DIALOG_HEIGHT" value="434"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="243"/>
+		<item key="DIALOG_Y_ORIGIN" value="391"/>
+	</section>
+</section>

@@ -1,0 +1,25 @@
+package com.koreait.shoppingmall.controller.rest.cs;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.koreait.shoppingmall.domain.Board;
+
+//게시판 Rest 요청을 처리하는 하위 컨트롤러
+@Controller
+public class BoardController {
+	//글 목 록
+	@GetMapping("/rest/board")
+	public List<Board> getList(){
+		return null;
+	}
+	//상세
+	
+	//등록
+	
+	//수정
+	
+	//삭제
+}

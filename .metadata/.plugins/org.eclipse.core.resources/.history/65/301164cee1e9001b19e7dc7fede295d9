@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.model.repository.category;
+
+public class TopCategoryDAO {
+
+}

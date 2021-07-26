@@ -1,0 +1,55 @@
+<%@page import="java.util.Calendar"%>
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%!
+	Date today = new Date();
+	String origin = "2021-08-05";
+	SimpleDateFormat trans = new SimpleDateFormat("yyyy-MM-dd");
+	try {
+		Date original = trans.parse(origin);
+	} catch (ParseException e) {
+		e.printStackTrace();
+	}
+%>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <a class="navbar-brand" href="#">
+  	<img src="/resources/admin/imgs/reallogo.png" width="50px" height="50px">
+  </a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/admin/main/index">관리자메인</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/admin/main/qna">Q&A관리</a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        상품관리
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/admin/main/product">전체관리</a>
+        <a class="dropdown-item" href="#">상품관리</a>
+        <a class="dropdown-item" href="#">배송현황</a>
+      </div>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        회원관리
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/admin/main/member">전체관리</a>
+        <a class="dropdown-item" href="#">우수회원</a>
+        <a class="dropdown-item" href="#">블랙리스트</a>
+      </div>
+    </li>
+    <li>
+  </ul>
+  <ul class="navbar-nav float-right">
+      <span class="navbar-text ml-auto">
+    사이트 운영 <%=original %>일 째입니다.
+  	</span>  
+  </ul>
+</nav>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MybatisConfigManager.java&apos; to &apos;TourApp/src/main/java/com.koreait.tourapp.mybatise&apos;&#x0D;&#x0A;- Original project: &apos;site0625&apos;&#x0D;&#x0A;- Destination element: &apos;TourApp/src/main/java/com.koreait.tourapp.mybatise&apos;&#x0D;&#x0A;- Original element: &apos;com.koreait.site0625.model.mybatis.MybatisConfigManager.java&apos;" description="Copy compilation unit" destination="=TourApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.koreait.tourapp.mybatise" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.koreait.site0625.model.mybatis{MybatisConfigManager.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1624947237765" units="1" version="1.0"/>
+</session>

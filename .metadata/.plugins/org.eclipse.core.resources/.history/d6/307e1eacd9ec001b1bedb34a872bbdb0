@@ -1,0 +1,5 @@
+package ga.dgmarket.gymshopping.controller.product;
+
+public class ProductController {
+
+}

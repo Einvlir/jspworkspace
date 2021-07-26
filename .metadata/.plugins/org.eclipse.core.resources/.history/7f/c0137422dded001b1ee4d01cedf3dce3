@@ -1,0 +1,13 @@
+package com.koreait.shoppingmall.exception;
+
+public class DMLExcption extends RuntimeException{
+	public DMLExcption(String msg) {
+		super(msg);
+	}
+	public DMLExcption(Throwable e) {
+		super(e);
+	}
+	public DMLExcption(Throwable e, String msg) {
+		super(msg, e);
+	}
+}

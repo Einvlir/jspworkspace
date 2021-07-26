@@ -1,0 +1,17 @@
+package com.koreait.shoppingmall.controller.client.cs;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.koreait.shoppingmall.model.service.cs.BoardService;
+
+@Controller
+public class BoardController {
+	@Autowired
+	private BoardService boardService;
+	@GetMapping("/cs/board/main")
+	public String boardMain() {
+		return "client/board/index";
+	}
+}

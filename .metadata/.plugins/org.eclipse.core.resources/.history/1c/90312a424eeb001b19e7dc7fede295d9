@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.model.repository.cs;
+
+public class BoardDAO {
+
+}

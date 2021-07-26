@@ -1,0 +1,55 @@
+package com.koreait.shoppingmall.controller.client.cs;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.fasterxml.jackson.core.JsonParser;
+import com.google.gson.Gson;
+import com.koreait.shoppingmall.domain.Board;
+import com.koreait.shoppingmall.exception.DMLExcption;
+import com.koreait.shoppingmall.model.service.cs.BoardService;
+
+@Controller
+public class BoardController {
+	@Autowired
+	private BoardService boardService;
+	@GetMapping("/cs/board/main")
+	public String boardMain() {
+		return "client/board/index";
+	}
+	
+	//글 등록 요청처리
+	@PostMapping("cs/board/regist")
+	@ResponseBody//뷰페이지가 아닌 데이터로 전송
+	public String regist(@RequestBody String data) {
+		JSONParser jsonParser = new JSONParser();
+		try {
+			JSONObject json = (JSONObject) jsonParser.parse(data);
+			System.out.println(json.get("title"));
+			System.out.println(json.get("writer"));
+			System.out.println(json.get("content"));
+			Board board = new Board();
+			board.setTitle((String)json.get("title"));
+			board.setWriter((String)json.get("writer"));
+			board.setContent((String)json.get("content"));
+			boardService.insert(board);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+		return "1";
+	}
+	@ExceptionHandler(DMLExcption.class)
+	@ResponseBody
+	public String handleException(DMLExcption e) {
+		return e.getMessage();
+	}
+}

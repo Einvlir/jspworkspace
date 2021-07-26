@@ -1,0 +1,13 @@
+package ga.dgmarket.gymshopping.controller.admin;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class AdminController {
+	@GetMapping("/main/index")
+	public String adminMain() {
+		System.out.println("확인용");
+		return "admin/main/index";
+	}
+}

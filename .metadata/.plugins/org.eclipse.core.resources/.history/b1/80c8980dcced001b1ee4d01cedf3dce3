@@ -1,0 +1,35 @@
+package com.koreait.shoppingmall.controller.rest.cs;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.koreait.shoppingmall.domain.Board;
+import com.koreait.shoppingmall.model.service.cs.BoardService;
+
+//게시판 Rest 요청을 처리하는 하위 컨트롤러
+@Controller
+public class BoardController {
+	@Autowired
+	private BoardService boardService;
+	//글 목 록
+	@GetMapping("/board")
+	public List<Board> getList(){
+		List boardList = boardService.selectAll();
+		return boardList;
+	}
+	//상세
+	@GetMapping("/board/{board_id}")
+	public Board getDetail(@PathVariable int board_id) {
+		Board board = boardService.select(board_id);
+		return board;
+	}
+	//등록
+	
+	//수정
+	
+	//삭제
+}

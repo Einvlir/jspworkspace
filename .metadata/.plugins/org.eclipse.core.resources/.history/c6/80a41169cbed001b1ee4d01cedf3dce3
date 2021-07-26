@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.controller.rest.cs;
+
+public class BoardController {
+
+}

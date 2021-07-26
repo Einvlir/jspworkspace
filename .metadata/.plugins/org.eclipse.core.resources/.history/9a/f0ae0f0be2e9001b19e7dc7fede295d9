@@ -1,0 +1,7 @@
+package com.koreait.shoppingmall.model.repository.category;
+
+import java.util.List;
+
+public interface TopCategoryDAO {
+	public List getSubCount();
+}

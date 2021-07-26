@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;site0617.gallery.bugfix&apos; to &apos;Bugfix&apos;&#x0D;&#x0A;- Original project: &apos;site0617&apos;&#x0D;&#x0A;- Original element: &apos;site0617.gallery.bugfix&apos;&#x0D;&#x0A;- Renamed element: &apos;site0617.gallery.Bugfix&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;bugfix&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;site0617.gallery{bugfix.java[bugfix" matchStrategy="1" name="Bugfix" qualified="false" references="true" similarDeclarations="false" stamp="1623977232769" textual="false" version="1.0"/>
+</session>

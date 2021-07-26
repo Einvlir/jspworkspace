@@ -1,0 +1,7 @@
+1625635790277	Move 'babo-servlet.xml' to 'WEB-INF'
+1625636905025	Rename package 'com.koreait.springmvctest.model.domain'
+1625636915338	Rename package 'com.koreait.springmvctest.model.board.dao'
+1625639485108	Rename package 'com.koreait.springmvc0707.model.board.dao'
+1625642687934	Delete elements
+1625642743489	Rename package 'com.koreait.springmvctest.model.mybatis'
+1625642750100	Rename package 'com.koreait.springmvctest.util.pool'

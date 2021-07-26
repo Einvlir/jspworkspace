@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.model.service.product;
+
+public class ProductServiceImpl {
+
+}

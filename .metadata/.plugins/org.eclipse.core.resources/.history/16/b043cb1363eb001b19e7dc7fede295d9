@@ -1,0 +1,5 @@
+package ga.dgmarket.gymshopping.domain;
+
+public class Admin {
+
+}

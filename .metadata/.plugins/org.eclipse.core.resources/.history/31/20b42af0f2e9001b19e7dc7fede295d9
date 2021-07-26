@@ -1,0 +1,49 @@
+package com.koreait.shoppingmall.model.repository.category;
+
+import java.util.List;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.koreait.shoppingmall.domain.SubCategory;
+@Repository
+public class SubCategoryMybatisDAO implements SubCategoryDAO{
+	@Autowired
+	private SqlSessionTemplate sqlsessionTemplate;
+	@Override
+	public List selectAllbyId(int topCategory_id) {
+		return sqlsessionTemplate.selectList("SubCategory.getSubDetail",topCategory_id);
+	}
+
+	@Override
+	public List selectAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void insert(SubCategory subCategory) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public SubCategory select(int subCategory_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(SubCategory SubCategory) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(int subCategory_id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FileManager.java&apos; to &apos;TourApp/src/main/java/com.koreait.tourapp.util&apos;&#x0D;&#x0A;- Original project: &apos;site0618&apos;&#x0D;&#x0A;- Destination element: &apos;TourApp/src/main/java/com.koreait.tourapp.util&apos;&#x0D;&#x0A;- Original element: &apos;site0618.util.FileManager.java&apos;" description="Copy compilation unit" destination="=TourApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.koreait.tourapp.util" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;site0618.util{FileManager.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1624945408623" units="1" version="1.0"/>
+</session>

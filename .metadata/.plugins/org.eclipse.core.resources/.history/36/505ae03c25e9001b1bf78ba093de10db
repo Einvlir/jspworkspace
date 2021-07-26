@@ -1,0 +1,16 @@
+package com.koreait.shoppingmall.model.repository.admin;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.koreait.shoppingmall.domain.Admin;
+@Repository
+public class MybatisAdminDAO implements AdminDAO{
+	@Autowired
+	private SqlSessionTemplate sqlSessionTemplate;
+	public Admin login(int host_id) {
+		return sqlSessionTemplate.selectOne("Admin.select",host_id);
+	}
+
+}

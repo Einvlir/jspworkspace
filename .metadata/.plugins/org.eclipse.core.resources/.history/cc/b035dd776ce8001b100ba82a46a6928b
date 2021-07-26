@@ -1,0 +1,5 @@
+--관리자 계정 테이블
+create table admin(
+
+
+);

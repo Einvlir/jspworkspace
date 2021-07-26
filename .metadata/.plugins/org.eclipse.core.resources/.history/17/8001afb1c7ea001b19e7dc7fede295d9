@@ -1,0 +1,10 @@
+package com.koreait.shoppingmall.model.common.file;
+
+//비즈니스 로직 파트에서 파일과 관련된 업무를 전담하는 객체
+public class FileManager {
+	public String getExt(String path) {
+		int lastIndex = path.lastIndexOf(".");
+		
+		return path.substring(lastIndex+1, path.length());
+	}
+}

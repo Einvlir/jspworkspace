@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.model.repository.product;
+
+public class MybatisProductDAO implements ProductDAO{
+
+}

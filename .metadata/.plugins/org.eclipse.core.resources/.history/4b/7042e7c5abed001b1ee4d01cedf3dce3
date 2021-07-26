@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.controller.rest.study;
+
+public class StudyController {
+
+}

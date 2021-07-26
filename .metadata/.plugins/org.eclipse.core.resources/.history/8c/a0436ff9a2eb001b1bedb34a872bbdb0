@@ -1,0 +1,28 @@
+package ga.dgmarket.gymshopping.controller.admin;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import ga.dgmarket.gymshopping.controller.member.MemberController;
+import ga.dgmarket.gymshopping.model.service.admin.AdminService;
+
+@Controller
+public class AdminController {
+	private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
+	@Autowired
+	private AdminService adminService;
+	
+	@GetMapping("/main/index")
+	public String adminMain() {
+		System.out.println("확인용");
+		return "admin/login/index";
+	}
+	
+	@GetMapping("/")
+	public String admin_member() {
+		return "admin/member/index";
+	}
+}

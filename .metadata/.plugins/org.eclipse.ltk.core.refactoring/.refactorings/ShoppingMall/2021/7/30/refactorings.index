@@ -1,0 +1,55 @@
+1626676890680	Move 10 resources to 'client'
+1626678630146	Copy file
+1626678691090	Rename package 'com.koreait.shoppingmall'
+1626678716381	Copy package
+1626678754137	Rename type 'HomeController'
+1626678762444	Rename type 'HomeController'
+1626679754902	Copy package
+1626679760009	Delete element
+1626679769915	Copy file
+1626680690868	Rename resource 'loginForm.jsp'
+1626681046950	Rename resource 'servlet-context.xml'
+1626681849167	Copy file
+1626681933747	Move 'loginform.jsp' to 'admin'
+1626739999020	Delete element
+1626759992746	Copy file
+1626762686496	Rename package 'com.koreait.shoppingmall.model'
+1626762695198	Rename package 'com.koreait.shoppingmall.model.repository'
+1626765100318	Copy file
+1626765126434	Rename resource 'index.html'
+1626768989858	Rename resource 'sidenavi.jsp'
+1626770683857	Rename type 'Subcategory'
+1626770688027	Rename type 'SubDategory'
+1626770691883	Rename type 'Topcategory'
+1626770798907	Copy file
+1626770805953	Copy file
+1626780778779	Copy file
+1626780848564	Copy file
+1626845084892	Copy file
+1626864517301	Copy folder
+1626864774458	Copy folder
+1626864878874	Copy folders
+1626864921370	Copy folders
+1626869833501	Copy file
+1626930623817	Delete element
+1626930637532	Copy file
+1626930648386	Rename resource 'index.jsp'
+1626931241114	Rename resource 'registform.jsp'
+1626942696399	Rename package 'com.koreait.shoppingmall.model.file'
+1626943334129	Copy compilation unit
+1626999229698	Delete elements
+1627000204465	Copy file
+1627001463647	Copy compilation unit
+1627004023561	Move file
+1627004630022	Copy file
+1627004635470	Delete element
+1627009462390	Copy file
+1627017255745	Copy file
+1627017583093	Rename type 'Product'
+1627018371780	Copy file
+1627021503990	Rename resource 'list.jsp'
+1627022189604	Copy file
+1627029452009	Copy compilation unit
+1627029471325	Rename type 'FileDeleteException'
+1627039551799	Copy file
+1627039557108	Delete element

@@ -1,0 +1,7 @@
+--product , subcategory, topcategory 조인
+
+select * 
+from topcategory t ,subcategory s , product p 
+where t.topcategory_id = s.topcategory_id 
+and s.subcategory_id = p.subcategory_id
+and product_id = 5;

@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.exception;
+
+public class MemberExistException extends RuntimeException{
+	
+}

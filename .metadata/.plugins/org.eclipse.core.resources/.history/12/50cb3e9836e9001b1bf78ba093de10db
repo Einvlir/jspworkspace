@@ -1,0 +1,6 @@
+package com.koreait.shoppingmall.domain;
+
+public class Topcategory {
+	private int topcategory_id;
+	private String top_name;
+}

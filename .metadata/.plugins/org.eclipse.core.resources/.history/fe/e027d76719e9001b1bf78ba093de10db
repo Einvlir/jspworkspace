@@ -1,0 +1,5 @@
+package com.koreait.shoppingmall.domain;
+
+public class Admin {
+
+}

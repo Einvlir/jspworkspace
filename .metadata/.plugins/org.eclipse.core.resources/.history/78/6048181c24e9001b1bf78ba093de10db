@@ -1,0 +1,9 @@
+package com.koreait.shoppingmall.model;
+
+public class MybatisAdminDAO implements AdminDAO{
+
+	public void select(int host_id) {
+		
+	}
+
+}

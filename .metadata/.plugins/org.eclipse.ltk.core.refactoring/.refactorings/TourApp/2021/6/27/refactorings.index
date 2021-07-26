@@ -1,0 +1,6 @@
+1624860287733	Move 'data' to 'webapp'
+1624866093745	Rename type 'CultureParser'
+1624947246603	Rename package 'com.koreait.tourapp.mybatise'
+1624947522051	Rename resource 'storeMapper.xml'
+1624948110553	Rename type 'JdbcDAO'
+1624948146501	Copy compilation unit

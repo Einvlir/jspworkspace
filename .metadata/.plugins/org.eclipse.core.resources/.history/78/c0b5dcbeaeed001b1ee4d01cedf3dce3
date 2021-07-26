@@ -1,0 +1,14 @@
+package com.koreait.shoppingmall.controller.rest.study;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+
+import com.koreait.shoppingmall.domain.Member;
+
+@Controller
+public class StudyController {
+	public List<Member> getList() {
+		return null;
+	}
+}

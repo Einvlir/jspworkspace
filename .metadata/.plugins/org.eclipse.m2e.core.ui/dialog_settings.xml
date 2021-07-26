@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="springdb"/>
+			<item value="Springmvc0715"/>
+			<item value="SpringMVC0714"/>
+			<item value="SpringMVC0707"/>
+			<item value="SpringMVCTest"/>
+			<item value="project03"/>
+			<item value="springBasic"/>
+			<item value="Model2App"/>
+			<item value="TourApp"/>
+			<item value="site0625"/>
+			<item value="site0622"/>
+			<item value="site0621"/>
+			<item value="site0618"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="springdb"/>
+			<item value="Springmvc0715"/>
+			<item value="SpringMVC0714"/>
+			<item value="SpringMVC0707"/>
+			<item value="SpringMVCTest"/>
+			<item value="project03"/>
+			<item value="springBasic"/>
+			<item value="Model2App"/>
+			<item value="TourApp"/>
+			<item value="site0625"/>
+			<item value="site0622"/>
+			<item value="site0621"/>
+			<item value="site0618"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>
